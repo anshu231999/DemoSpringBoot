@@ -1,4 +1,4 @@
-package com.anshu.controller;
+package com.anshu.practice.controller;
 
 public class Request {
 	
