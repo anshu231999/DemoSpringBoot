@@ -35,12 +35,13 @@ public class Controller {
 	public String getMapping() {
 		return "GET Request";
 	}
-	@PostMapping(path="/hello",consumes= {MediaType.APPLICATION_FORM_URLENCODED_VALUE})
-	public String postData(@RequestHeader Map<String,String>mp,Request req) {
+	@PostMapping(value="/hello",consumes= MediaType.APPLICATION_FORM_URLENCODED_VALUE)
+	public Response postData(@RequestHeader Map<String,String>mp,Request req) throws Exception {
 		System.out.println(req.toString());
 		System.out.println(mp);
-		
-		return "Form Data";
+		Response res=null;
+		res= new Response(400,"Form Data");
+		return res;
 	}
 
 }
