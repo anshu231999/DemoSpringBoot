@@ -4,12 +4,13 @@ package com.anshu.practice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.ComponentScan;
 
 
 @ComponentScan
 @SpringBootApplication
-public class App {
+public class App extends SpringBootServletInitializer {
 
 	
 	
